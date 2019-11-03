@@ -1,20 +1,20 @@
 <template>
   <div class="home">
     <div class="navbar-verticle">
-      <img class="logo" alt="Save Our Space Logo" src="../assets/logo.png"/>
+      <img class="logo" alt="Save Our Space Logo" src="@/assets/logo.png"/>
       <hr>
-      <router-link to="#"><h3>Report A Fire</h3></router-link>
+      <router-link to="/submit"><h3>Report A Fire</h3></router-link>
       <hr>
-      <router-link to="#"><h3>Live Map</h3></router-link>
+      <router-link to="/about"><h3>Live Map</h3></router-link>
       <hr>
       <router-link to="/about"><h3>How It Works</h3></router-link>
       <hr>
-      <router-link to="#"><h3>Contact</h3></router-link>
+      <router-link to="/about"><h3>Contact</h3></router-link>
       <hr>
     </div>
     <div class="content">
       <video width="cover" height="cover" autoplay>
-        <source src="../assets/footage.mp4" type="video/mp4">
+        <source src="@/assets/footage.mp4" type="video/mp4">
       </video>
       <div class="overlay">
         <vue-typed-js class="typer" 
@@ -23,7 +23,7 @@
         </vue-typed-js>
       </div>
       <div>
-        <a href="/about"><h3 class="delay">Get Started</h3></a>
+        <router-link to="/about"><h3 class="delay">Get Started</h3></router-link>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 
 .home {
   background-color: whitesmoke;
