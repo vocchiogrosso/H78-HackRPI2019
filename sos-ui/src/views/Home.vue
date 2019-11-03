@@ -5,7 +5,7 @@
       <hr>
       <router-link to="/submit"><h3>Report A Fire</h3></router-link>
       <hr>
-      <router-link to="/about"><h3>Live Map</h3></router-link>
+      <router-link to="/live"><h3>Live Map</h3></router-link>
       <hr>
       <router-link to="/about"><h3>How It Works</h3></router-link>
       <hr>
@@ -14,7 +14,7 @@
     </div>
     <div class="content">
       <video width="cover" height="cover" autoplay>
-        <source src="@/assets/footage.mp4" type="video/mp4">
+        <source src="https://sos-ui.s3.us-east-2.amazonaws.com/footage.mp4" type="video/mp4">
       </video>
       <div class="overlay">
         <vue-typed-js class="typer" 

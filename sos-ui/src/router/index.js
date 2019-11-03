@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Submit from '../views/Submit.vue'
+import Live from '../views/Live.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/submit',
     name: 'submit',
     component: Submit
+  },
+  {
+    path:'/live',
+    name:"live",
+    component: Live
   }
 ]
 
